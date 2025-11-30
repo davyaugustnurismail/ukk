@@ -1,0 +1,152 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/dompdf/php-font-lib
+EncodingScheme FontSpecific
+Copyright Copyright (c) 2018 by TypeFairy. All rights reserved.
+FontName Railey-PersonalUse
+FontSubfamily Regular
+UniqueID 1.003;RaileyPersonalUseRegular
+FullName Railey-PersonalUse
+Version Version 1.003;Fontself Maker 2.3.4
+PostScriptName RaileyPersonalUseRegular
+Manufacturer TypeFairy
+Designer TypeFairy
+PreferredFamily Railey-PersonalUse
+PreferredSubfamily Regular
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 0
+UnderlinePosition 0
+FontHeightOffset 0
+Ascender 1150
+Descender -371
+FontBBox -141 -410 1062 1119
+StartCharMetrics 71
+U 0 ; WX 500 ; N .notdef ; G 0
+U 10 ; WX 0 ; N controlLF ; G 3
+U 13 ; WX 0 ; N controlCR ; G 4
+U 32 ; WX 237 ; N space ; G 5
+U 33 ; WX 267 ; N exclam ; G 6
+U 48 ; WX 757 ; N zero ; G 7
+U 49 ; WX 430 ; N one ; G 8
+U 50 ; WX 670 ; N two ; G 9
+U 51 ; WX 614 ; N three ; G 10
+U 52 ; WX 687 ; N four ; G 11
+U 53 ; WX 631 ; N five ; G 12
+U 54 ; WX 724 ; N six ; G 13
+U 55 ; WX 771 ; N seven ; G 14
+U 56 ; WX 651 ; N eight ; G 15
+U 57 ; WX 603 ; N nine ; G 16
+U 63 ; WX 429 ; N question ; G 17
+U 65 ; WX 528 ; N A ; G 18
+U 66 ; WX 614 ; N B ; G 19
+U 67 ; WX 585 ; N C ; G 20
+U 68 ; WX 839 ; N D ; G 21
+U 69 ; WX 495 ; N E ; G 22
+U 70 ; WX 610 ; N F ; G 23
+U 71 ; WX 715 ; N G ; G 24
+U 72 ; WX 620 ; N H ; G 25
+U 73 ; WX 257 ; N I ; G 26
+U 74 ; WX 514 ; N J ; G 27
+U 75 ; WX 591 ; N K ; G 28
+U 76 ; WX 458 ; N L ; G 29
+U 77 ; WX 865 ; N M ; G 30
+U 78 ; WX 735 ; N N ; G 31
+U 79 ; WX 745 ; N O ; G 32
+U 80 ; WX 574 ; N P ; G 33
+U 81 ; WX 753 ; N Q ; G 34
+U 82 ; WX 542 ; N R ; G 35
+U 83 ; WX 536 ; N S ; G 36
+U 84 ; WX 527 ; N T ; G 37
+U 85 ; WX 576 ; N U ; G 38
+U 86 ; WX 572 ; N V ; G 39
+U 87 ; WX 772 ; N W ; G 40
+U 88 ; WX 551 ; N X ; G 41
+U 89 ; WX 620 ; N Y ; G 42
+U 90 ; WX 572 ; N Z ; G 43
+U 97 ; WX 360 ; N a ; G 44
+U 98 ; WX 357 ; N b ; G 45
+U 99 ; WX 300 ; N c ; G 46
+U 100 ; WX 415 ; N d ; G 47
+U 101 ; WX 300 ; N e ; G 48
+U 102 ; WX 243 ; N f ; G 49
+U 103 ; WX 393 ; N g ; G 50
+U 104 ; WX 357 ; N h ; G 51
+U 105 ; WX 200 ; N i ; G 52
+U 106 ; WX 180 ; N j ; G 53
+U 107 ; WX 300 ; N k ; G 54
+U 108 ; WX 257 ; N l ; G 55
+U 109 ; WX 454 ; N m ; G 56
+U 110 ; WX 378 ; N n ; G 57
+U 111 ; WX 353 ; N o ; G 58
+U 112 ; WX 376 ; N p ; G 59
+U 113 ; WX 386 ; N q ; G 60
+U 114 ; WX 300 ; N r ; G 61
+U 115 ; WX 263 ; N s ; G 62
+U 116 ; WX 194 ; N t ; G 63
+U 117 ; WX 428 ; N u ; G 64
+U 118 ; WX 311 ; N v ; G 65
+U 119 ; WX 497 ; N w ; G 66
+U 120 ; WX 331 ; N x ; G 67
+U 121 ; WX 385 ; N y ; G 68
+U 122 ; WX 300 ; N z ; G 69
+U 160 ; WX 237 ; N nbspace ; G 70
+U 192 ; WX 528 ; N A ; G 18
+U 193 ; WX 528 ; N A ; G 18
+U 194 ; WX 528 ; N A ; G 18
+U 195 ; WX 528 ; N A ; G 18
+U 196 ; WX 528 ; N A ; G 18
+U 197 ; WX 528 ; N A ; G 18
+U 199 ; WX 585 ; N C ; G 20
+U 200 ; WX 495 ; N E ; G 22
+U 201 ; WX 495 ; N E ; G 22
+U 202 ; WX 495 ; N E ; G 22
+U 203 ; WX 495 ; N E ; G 22
+U 204 ; WX 257 ; N I ; G 26
+U 205 ; WX 257 ; N I ; G 26
+U 206 ; WX 257 ; N I ; G 26
+U 207 ; WX 257 ; N I ; G 26
+U 209 ; WX 735 ; N N ; G 31
+U 210 ; WX 745 ; N O ; G 32
+U 211 ; WX 745 ; N O ; G 32
+U 212 ; WX 745 ; N O ; G 32
+U 213 ; WX 745 ; N O ; G 32
+U 214 ; WX 745 ; N O ; G 32
+U 216 ; WX 745 ; N O ; G 32
+U 217 ; WX 576 ; N U ; G 38
+U 218 ; WX 576 ; N U ; G 38
+U 219 ; WX 576 ; N U ; G 38
+U 220 ; WX 576 ; N U ; G 38
+U 221 ; WX 620 ; N Y ; G 42
+U 223 ; WX 263 ; N s ; G 62
+U 224 ; WX 360 ; N a ; G 44
+U 225 ; WX 360 ; N a ; G 44
+U 226 ; WX 360 ; N a ; G 44
+U 227 ; WX 360 ; N a ; G 44
+U 228 ; WX 360 ; N a ; G 44
+U 229 ; WX 360 ; N a ; G 44
+U 231 ; WX 300 ; N c ; G 46
+U 232 ; WX 300 ; N e ; G 48
+U 233 ; WX 300 ; N e ; G 48
+U 234 ; WX 300 ; N e ; G 48
+U 235 ; WX 300 ; N e ; G 48
+U 236 ; WX 200 ; N i ; G 52
+U 237 ; WX 200 ; N i ; G 52
+U 238 ; WX 200 ; N i ; G 52
+U 239 ; WX 200 ; N i ; G 52
+U 241 ; WX 378 ; N n ; G 57
+U 242 ; WX 353 ; N o ; G 58
+U 243 ; WX 353 ; N o ; G 58
+U 244 ; WX 353 ; N o ; G 58
+U 245 ; WX 353 ; N o ; G 58
+U 246 ; WX 353 ; N o ; G 58
+U 248 ; WX 353 ; N o ; G 58
+U 249 ; WX 428 ; N u ; G 64
+U 250 ; WX 428 ; N u ; G 64
+U 251 ; WX 428 ; N u ; G 64
+U 252 ; WX 428 ; N u ; G 64
+U 253 ; WX 385 ; N y ; G 68
+U 255 ; WX 385 ; N y ; G 68
+EndCharMetrics
+EndFontMetrics

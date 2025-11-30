@@ -1,0 +1,137 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment https://github.com/dompdf/php-font-lib
+EncodingScheme FontSpecific
+Copyright Copyright (c) 2017 by Letterhend Studio. All rights reserved.
+FontName Brighter Demo
+FontSubfamily Regular
+UniqueID LetterhendStudio: Brighter: 2017
+FullName Brighter
+Version 1.000
+PostScriptName Brighter
+Trademark Brighter is a trademark of Letterhend Studio.
+Manufacturer Letterhend Studio
+Designer Letterhend Studio
+Description Copyright (c) 2016 by Letterhend Studio. All rights reserved.
+FontVendorURL https://creativemarket.com/letterhend
+FontDesignerURL https://www.letterhend.com
+PreferredFamily Brighter Demo
+PreferredSubfamily Regular
+CompatibleFullName 䉲楧桴敲
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+UnderlineThickness 50
+UnderlinePosition -75
+FontHeightOffset 200
+Ascender 700
+Descender -300
+FontBBox -667 -485 2645 679
+StartCharMetrics 102
+U 0 ; WX 0 ; N uni0000 ; G 101
+U 13 ; WX 336 ; N uni000d ; G 1
+U 32 ; WX 336 ; N uni0020 ; G 2
+U 33 ; WX 235 ; N uni0021 ; G 83
+U 34 ; WX 224 ; N uni0022 ; G 94
+U 35 ; WX 501 ; N uni0023 ; G 78
+U 36 ; WX 351 ; N uni0024 ; G 77
+U 37 ; WX 479 ; N uni0025 ; G 71
+U 38 ; WX 408 ; N uni0026 ; G 75
+U 39 ; WX 148 ; N uni0027 ; G 80
+U 40 ; WX 126 ; N uni0028 ; G 79
+U 41 ; WX 234 ; N uni0029 ; G 76
+U 42 ; WX 297 ; N uni002a ; G 73
+U 43 ; WX 362 ; N uni002b ; G 72
+U 44 ; WX 110 ; N uni002c ; G 89
+U 45 ; WX 326 ; N uni002d ; G 84
+U 46 ; WX 97 ; N uni002e ; G 90
+U 47 ; WX 389 ; N uni002f ; G 66
+U 48 ; WX 437 ; N uni0030 ; G 62
+U 49 ; WX 190 ; N uni0031 ; G 64
+U 50 ; WX 422 ; N uni0032 ; G 63
+U 51 ; WX 432 ; N uni0033 ; G 61
+U 52 ; WX 365 ; N uni0034 ; G 60
+U 53 ; WX 410 ; N uni0035 ; G 59
+U 54 ; WX 363 ; N uni0036 ; G 58
+U 55 ; WX 296 ; N uni0037 ; G 57
+U 56 ; WX 439 ; N uni0038 ; G 56
+U 57 ; WX 401 ; N uni0039 ; G 55
+U 58 ; WX 213 ; N uni003a ; G 96
+U 59 ; WX 249 ; N uni003b ; G 95
+U 60 ; WX 227 ; N uni003c ; G 92
+U 61 ; WX 399 ; N uni003d ; G 74
+U 62 ; WX 223 ; N uni003e ; G 91
+U 63 ; WX 324 ; N uni003f ; G 82
+U 64 ; WX 532 ; N uni0040 ; G 81
+U 65 ; WX 601 ; N uni0041 ; G 38
+U 66 ; WX 584 ; N uni0042 ; G 25
+U 67 ; WX 539 ; N uni0043 ; G 46
+U 68 ; WX 575 ; N uni0044 ; G 45
+U 69 ; WX 440 ; N uni0045 ; G 47
+U 70 ; WX 397 ; N uni0046 ; G 48
+U 71 ; WX 554 ; N uni0047 ; G 43
+U 72 ; WX 655 ; N uni0048 ; G 34
+U 73 ; WX 263 ; N uni0049 ; G 49
+U 74 ; WX 511 ; N uni004a ; G 44
+U 75 ; WX 756 ; N uni004b ; G 32
+U 76 ; WX 660 ; N uni004c ; G 30
+U 77 ; WX 1168 ; N uni004d ; G 26
+U 78 ; WX 814 ; N uni004e ; G 31
+U 79 ; WX 574 ; N uni004f ; G 42
+U 80 ; WX 535 ; N uni0050 ; G 41
+U 81 ; WX 566 ; N uni0051 ; G 50
+U 82 ; WX 745 ; N uni0052 ; G 29
+U 83 ; WX 573 ; N uni0053 ; G 36
+U 84 ; WX 411 ; N uni0054 ; G 40
+U 85 ; WX 847 ; N uni0055 ; G 28
+U 86 ; WX 612 ; N uni0056 ; G 39
+U 87 ; WX 1004 ; N uni0057 ; G 27
+U 88 ; WX 525 ; N uni0058 ; G 35
+U 89 ; WX 686 ; N uni0059 ; G 33
+U 90 ; WX 596 ; N uni005a ; G 37
+U 91 ; WX 241 ; N uni005b ; G 68
+U 92 ; WX 437 ; N uni005c ; G 93
+U 93 ; WX 235 ; N uni005d ; G 67
+U 94 ; WX 263 ; N uni005e ; G 87
+U 95 ; WX 400 ; N uni005f ; G 85
+U 96 ; WX 168 ; N uni0060 ; G 88
+U 97 ; WX 505 ; N uni0061 ; G 54
+U 98 ; WX 405 ; N uni0062 ; G 15
+U 99 ; WX 377 ; N uni0063 ; G 12
+U 100 ; WX 392 ; N uni0064 ; G 7
+U 101 ; WX 271 ; N uni0065 ; G 21
+U 102 ; WX 220 ; N uni0066 ; G 8
+U 103 ; WX 263 ; N uni0067 ; G 3
+U 104 ; WX 328 ; N uni0068 ; G 20
+U 105 ; WX 178 ; N uni0069 ; G 23
+U 106 ; WX 187 ; N uni006a ; G 24
+U 107 ; WX 335 ; N uni006b ; G 18
+U 108 ; WX 217 ; N uni006c ; G 9
+U 109 ; WX 539 ; N uni006d ; G 98
+U 110 ; WX 388 ; N uni006e ; G 6
+U 111 ; WX 318 ; N uni006f ; G 5
+U 112 ; WX 346 ; N uni0070 ; G 4
+U 113 ; WX 267 ; N uni0071 ; G 19
+U 114 ; WX 232 ; N uni0072 ; G 22
+U 115 ; WX 249 ; N uni0073 ; G 14
+U 116 ; WX 189 ; N uni0074 ; G 51
+U 117 ; WX 382 ; N uni0075 ; G 99
+U 118 ; WX 239 ; N uni0076 ; G 16
+U 119 ; WX 385 ; N uni0077 ; G 11
+U 120 ; WX 326 ; N uni0078 ; G 17
+U 121 ; WX 325 ; N uni0079 ; G 13
+U 122 ; WX 357 ; N uni007a ; G 10
+U 123 ; WX 145 ; N uni007b ; G 69
+U 124 ; WX 352 ; N uni007c ; G 65
+U 125 ; WX 320 ; N uni007d ; G 70
+U 126 ; WX 347 ; N uni007e ; G 86
+U 57344 ; WX 2669 ; N unie000 ; G 100
+U 57350 ; WX 263 ; N unie006 ; G 52
+U 57387 ; WX 440 ; N unie02b ; G 53
+U 57397 ; WX 188 ; N unie035 ; G 97
+EndCharMetrics
+StartKernData 
+StartKernPairs 34
+EndKernPairs
+EndKernData
+EndFontMetrics

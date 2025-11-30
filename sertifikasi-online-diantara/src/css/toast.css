@@ -1,0 +1,116 @@
+/* Toast Container Configuration */
+.Toastify__toast-container {
+  width: 320px !important;
+  padding: 4px !important;
+  box-sizing: border-box !important;
+}
+
+/* Toast Base Styles */
+.Toastify__toast {
+  position: relative !important;
+  min-height: 64px !important;
+  max-height: 800px !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+  margin-bottom: 1rem !important;
+  padding: 14px !important;
+  background: white !important;
+  color: #374151 !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  border: 1px solid #e5e7eb !important;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden !important;
+}
+
+/* Toast Variants */
+.Toastify__toast--success {
+  border-left: 4px solid #059669 !important;
+}
+
+.Toastify__toast--error {
+  border-left: 4px solid #dc2626 !important;
+}
+
+.Toastify__toast--warning {
+  border-left: 4px solid #d97706 !important;
+}
+
+.Toastify__toast--info {
+  border-left: 4px solid #2563eb !important;
+}
+
+/* Toast Body */
+.Toastify__toast-body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif !important;
+  font-size: 0.875rem !important;
+  color: #374151 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Progress Bars */
+.Toastify__progress-bar {
+  height: 4px !important;
+}
+
+.Toastify__progress-bar--success {
+  background: #059669 !important;
+}
+
+.Toastify__progress-bar--error {
+  background: #dc2626 !important;
+}
+
+.Toastify__progress-bar--warning {
+  background: #d97706 !important;
+}
+
+.Toastify__progress-bar--info {
+  background: #2563eb !important;
+}
+
+/* Close Button */
+.Toastify__close-button {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+  padding: 4px !important;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 480px) {
+  .Toastify__toast-container {
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .Toastify__toast {
+    margin-bottom: 8px !important;
+  }
+
+  .Toastify__toast-container--top-left,
+  .Toastify__toast-container--top-center,
+  .Toastify__toast-container--top-right {
+    top: 16px !important;
+  }
+
+  .Toastify__toast-container--bottom-left,
+  .Toastify__toast-container--bottom-center,
+  .Toastify__toast-container--bottom-right {
+    bottom: 16px !important;
+  }
+}

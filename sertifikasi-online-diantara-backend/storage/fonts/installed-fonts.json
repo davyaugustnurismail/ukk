@@ -1,0 +1,268 @@
+{
+    "times new roman": {
+        "normal": "times_new_roman_normal_93b79437cdebc07abceac09d543e2ada"
+    },
+    "helvetica": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/helvetica_normal_473146a93d76b1b263dcf2dec9ae0e65",
+        "bold": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/helvetica_bold_bc7e783849e9e46d80e1906f4ef336a3",
+        "italic": "helvetica_italic_2a0f5b4e2ab1e590260678c894d5f493",
+        "bold_italic": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\vendor\\dompdf\\dompdf\/lib\/fonts\/Helvetica-BoldOblique",
+        "300": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/helvetica_300_f3180625c56d3167a621b1f1d8a550c0"
+    },
+    "georgia": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/georgia_normal_6498de89d44e10d857db1821c53c58b7",
+        "italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/georgia_italic_8a2a3714197069e162bc78fbc3572892",
+        "bold": "georgia_bold_1bb845324a3079ae60791a00a0117919"
+    },
+    "league spartan": {
+        "normal": "league_spartan_normal_2aa0a63cfeac9e79efa9e06939b44e5e",
+        "500": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/league_spartan_500_602b3cd79809b633284facdc29a34eb2",
+        "600": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/league_spartan_600_e3841366408d734dbbc4d3492d53f54f",
+        "bold": "C:\\Users\\indra\\OneDrive\\Dokumen\\Goldy\\Code\\Project PKL\\sertifikasi-online-diantara-backend\\storage\\fonts\/league_spartan_bold_4a563522b134f79df56c939283c9f008"
+    },
+    "playfair display": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_normal_20bf3645e0f91b9eda550d5f6d97a909",
+        "500": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_500_5d07c0309b18cac24b8013875cb0b582",
+        "500_italic": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_500_italic_92cf3af1e0fffcf2ddccbd7874f82e9c",
+        "600": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_600_c3e18b380a599b593e99d5dbf4c9d9f2",
+        "600_italic": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_600_italic_652fdc6851a31dc0376a1b08e02d5709",
+        "bold": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_bold_c008f8e3df387f577ed8a4a07bea51fd",
+        "bold_italic": "playfair_display_bold_italic_3b92990c73b981d7e7678944bdf1da34",
+        "italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/playfair_display_italic_d467bbb6b9692d832f64d28fa17866cf"
+    },
+    "poppins": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_normal_5e882467ad8772e64689184bdb891eaa",
+        "500": "poppins_500_cc59382aa55ed4c4f173dfc4fc24be81",
+        "500_italic": "C:\\Users\\indra\\OneDrive\\Dokumen\\Goldy\\Code\\Project PKL\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_500_italic_d5b8bf10cc9b5ce7db91de4bb4470011",
+        "600": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_600_f8f1acc4953dfb03f114a9ad8b3b0517",
+        "600_italic": "C:\\Users\\indra\\OneDrive\\Dokumen\\Goldy\\Code\\Project PKL\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_600_italic_445fc62bdcf0fba84b54a06acec0a856",
+        "bold": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_bold_4f0fbb182eb5eb68b2ece4ffed969ed1",
+        "bold_italic": "C:\\Users\\indra\\OneDrive\\Dokumen\\Goldy\\Code\\Project PKL\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_bold_italic_6008366665026896ac834a5d1145fc7c",
+        "italic": "C:\\Users\\indra\\OneDrive\\Dokumen\\Goldy\\Code\\Project PKL\\sertifikasi-online-diantara-backend\\storage\\fonts\/poppins_italic_6de0172381f6af71a115ab3443cc83d8"
+    },
+    "alice": {
+        "normal": "alice_normal_6448ec189d8c9f5b9a0134787934824b"
+    },
+    "allura": {
+        "normal": "allura_normal_7646c2d591d29bc82bff0da2ee848a33"
+    },
+    "anonymous pro": {
+        "normal": "anonymous_pro_normal_8c95e7bdca7d0d3c211ca75e39bf1033",
+        "bold": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/anonymous_pro_bold_bfd23a62b6985894ac53aa9eef3bfce3",
+        "bold_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/anonymous_pro_bold_italic_55c4e6a15085639ad510a94239ba2d27"
+    },
+    "anton": {
+        "normal": "anton_normal_aaccd0e30a835a0dc72fa9fa049a6fc0"
+    },
+    "arapey": {
+        "normal": "arapey_normal_c82b36511121466905f83580d9872f8a"
+    },
+    "archivo black": {
+        "normal": "archivo_black_normal_6074c00deec8fe751d56e0b1c2971b6a"
+    },
+    "barlow": {
+        "normal": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_normal_dc5c770a74abc2b27c274212c986f15f",
+        "500": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_500_b26c4986a2abf4da80f7444cecc10048",
+        "500_italic": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_500_italic_e872b101a9f80532ac94297eea4506ab",
+        "600": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_600_70aace9da0cf7f7dc0db57322a71c074",
+        "600_italic": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_600_italic_f6b3ddfe6ce62b3c66e05e0422e02eef",
+        "bold": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/barlow_bold_078142d3a7dcf5dcb000610c26652aa7",
+        "bold_italic": "barlow_bold_italic_d1bd30081886b4a5ab3b5d95bb9537a1"
+    },
+    "bebas neue": {
+        "normal": "bebas_neue_normal_be48b7e9915cb95d777971ed6add995a"
+    },
+    "belleza": {
+        "normal": "belleza_normal_5d0c144419c21896d4bb8fef74bac69c"
+    },
+    "bree serif": {
+        "normal": "bree_serif_normal_a9a341c646d9fc8bf78f3cc102bc02d1"
+    },
+    "chewy": {
+        "normal": "chewy_normal_1e207188a9f71b603b24b64ec2fc9563"
+    },
+    "dm serif display": {
+        "normal": "dm_serif_display_normal_76702317cd0217010ca8e294c5d26935"
+    },
+    "forum": {
+        "normal": "forum_normal_9d08b05a6dd3ba221e284c8e682264c2"
+    },
+    "great vibes": {
+        "normal": "great_vibes_normal_88bc1057315790e8269d75eea24223ac"
+    },
+    "hammersmith one": {
+        "normal": "hammersmith_one_normal_56429429b2e92d14700a4cbbaa47c1fa"
+    },
+    "inria serif": {
+        "normal": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/inria_serif_normal_3d5b50a89d436b9e036a78bda650e28b",
+        "bold": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/inria_serif_bold_35cad3e6b45a2e5f8a19c8035703046d",
+        "bold_italic": "inria_serif_bold_italic_f69846218ea07be816b325a20f9e7364"
+    },
+    "libre baskerville": {
+        "normal": "C:\\Vy Project\\Diantara\\sertifikasi-online-diantara-backend\\storage\\fonts\/libre_baskerville_normal_d2822ecb3ef3075d2c3e686777a1aca0",
+        "bold": "libre_baskerville_bold_4b05b521e5ac62d7a20034b9fa517969"
+    },
+    "questrial": {
+        "normal": "questrial_normal_d5d4094a9cd12540f2b15e89e8525eef"
+    },
+    "shrikhand": {
+        "normal": "shrikhand_normal_08a40551a45641fa21305807516829b4"
+    },
+    "tenor sans": {
+        "normal": "tenor_sans_normal_784ffc6814e6538cb3c2b48af6c9a6a8"
+    },
+    "yeseva one": {
+        "normal": "yeseva_one_normal_14e2d64ef5c1acdf033c328ebd5880cd"
+    },
+    "montserrat": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/montserrat_normal_d196b4155228343ce6584658ed0d72f0",
+        "italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/montserrat_italic_f3cc90836e2c7ebf5d085fc1c4cd0215",
+        "bold": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/montserrat_bold_7fb470f35eaae25719ba6418df531881",
+        "bold_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/montserrat_bold_italic_accdd10c238c46fdc950356d0c1c0bdd",
+        "600": "montserrat_600_da76f05f8eae6cfe610b5528caf415ec"
+    },
+    "railey": {
+        "normal": "railey_normal_748f6229a559fd34b20ef06a28d4ddbe"
+    },
+    "moresugar": {
+        "100": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/moresugar_100_2e5aafb145077715efff42abf3193881",
+        "normal": "moresugar_normal_09122a40ba543829da64ce22b9530bb9"
+    },
+    "gentry benedict": {
+        "normal": "gentry_benedict_normal_a8ae2e904b67fbf991f34e3514e1e93d"
+    },
+    "chunkfive ex": {
+        "normal": "chunkfive_ex_normal_a0f4b0cffe11e4f2812657afba886d05"
+    },
+    "brittany": {
+        "normal": "brittany_normal_c1271b6ab3a4b85d607a8cd61191e5a5"
+    },
+    "brighter regular": {
+        "normal": "brighter_regular_normal_8a6f81f0f6a7ac6d7b460a98f99dd280"
+    },
+    "breathing personal use only": {
+        "normal": "breathing_personal_use_only_normal_d975a6a0330486be658cfdafb291fe38"
+    },
+    "roboto": {
+        "100_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_100_italic_23fd289d28fd69b23a5db772f6207ee9",
+        "100": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_100_57d32379567b0d720ad3afa9a299aee0",
+        "600_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_600_italic_1aa267b2c1c659fdb9f668237b046e22",
+        "600": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_600_4f36d1628923a3e7a650eb5433276dee",
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_normal_19f697a49ff12593a50930f68b294796",
+        "500_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_500_italic_13fdd4ddfb84b85f946678baa389908b",
+        "500": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_500_e94762930d0ec7c0404834e3ff9c8ad3",
+        "300_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_300_italic_c2a8fc32352c16aff9ad90bc8bd59b09",
+        "300": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_300_2ddcf6a296bc5ae471f97fe6e915df5e",
+        "200_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_200_italic_a3ff586d619540fff15c33988f2df58b",
+        "200": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_200_cd6351f8b4b5ffaf2c8d61f1acc917d5",
+        "800_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_800_italic_52a4aef6070ccfb5d9a25c4dfeb292a2",
+        "800": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_800_40e1d64c9343992287497065d65c100a",
+        "bold_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_bold_italic_d694b119101775389df6a51d04c8aa01",
+        "bold": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_bold_ffc4a282fe1ea2491aba3ab41c1623f8",
+        "900_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/roboto_900_italic_1476a6ac329476b797a376939a2464a2",
+        "900": "roboto_900_86932daf50f38c4b9ccd89b7ae79c40b"
+    },
+    "raleway": {
+        "100_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_100_italic_894fd923078ce7889f91543856e05683",
+        "100": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_100_17f877ce061d7b17a0273bc1508c5598",
+        "600_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_600_italic_95cdaab154058d021eb0a70b2c11be02",
+        "600": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_600_831e56f85d053c6f26a6a7f0504bba54",
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_normal_3fd95db0668e385aa880066402b4d9bf",
+        "500_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_500_italic_6a7e134d3aa76efe51b5425137d78b9d",
+        "500": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/raleway_500_4064ad99409f2cdef43209f53a3ee99f",
+        "300_italic": "raleway_300_italic_909a3554d3d138c7110d4a6d51130068"
+    },
+    "oswald-400-italic": {
+        "italic": "oswald_400_italic_italic_21deae8f7e71528a39ac3145d665c410"
+    },
+    "allura-400-italic": {
+        "italic": "allura_400_italic_italic_7646c2d591d29bc82bff0da2ee848a33"
+    },
+    "hammersmith_one-hammersmithone-regular": {
+        "italic": "hammersmith_one_hammersmithone_regular_italic_105ccad24599e64252646c471d61ee3c"
+    },
+    "great_vibes-greatvibes-regular": {
+        "normal": "great_vibes_greatvibes_regular_normal_88bc1057315790e8269d75eea24223ac"
+    },
+    "archivo_black-archivoblack-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/archivo_black_archivoblack_regular_normal_d7771aa01091957813896d4fbe37c368",
+        "italic": "archivo_black_archivoblack_regular_italic_d7771aa01091957813896d4fbe37c368"
+    },
+    "times-new-roman-times-new-roman": {
+        "normal": "times_new_roman_times_new_roman_normal_93b79437cdebc07abceac09d543e2ada",
+        "italic": "D:\\PKL\\SOD\\sertifikasi-online-diantara-backend\\storage\\fonts\/times_new_roman_times_new_roman_italic_93b79437cdebc07abceac09d543e2ada"
+    },
+    "brittany_2-brittany": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/brittany_2_brittany_normal_f3f91b5133ca46af19dc2c63c909ec73",
+        "italic": "brittany_2_brittany_italic_f3f91b5133ca46af19dc2c63c909ec73"
+    },
+    "oswald-oswald-regular": {
+        "italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/oswald_oswald_regular_italic_21deae8f7e71528a39ac3145d665c410",
+        "normal": "oswald_oswald_regular_normal_21deae8f7e71528a39ac3145d665c410"
+    },
+    "oswald-oswald-bold": {
+        "bold_italic": "oswald_oswald_bold_bold_italic_b9b91fff3728fcd360044395a0fff30b"
+    },
+    "league_spartan-leaguespartan-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/league_spartan_leaguespartan_regular_normal_2aa0a63cfeac9e79efa9e06939b44e5e",
+        "italic": "league_spartan_leaguespartan_regular_italic_2aa0a63cfeac9e79efa9e06939b44e5e"
+    },
+    "chewy-chewy-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/chewy_chewy_regular_normal_ffd570116fd278c57ce0336eef08546c",
+        "italic": "chewy_chewy_regular_italic_ffd570116fd278c57ce0336eef08546c"
+    },
+    "bebas_neue-bebasneue-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/bebas_neue_bebasneue_regular_normal_434d55be890acac57c894a09c6a91d5e",
+        "italic": "bebas_neue_bebasneue_regular_italic_434d55be890acac57c894a09c6a91d5e"
+    },
+    "alice-alice-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/alice_alice_regular_normal_6b5f655ed62d19a1cbbcda4792c7984f",
+        "italic": "alice_alice_regular_italic_6b5f655ed62d19a1cbbcda4792c7984f"
+    },
+    "anonymous_pro-anonymouspro-regular": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/anonymous_pro_anonymouspro_regular_normal_8c95e7bdca7d0d3c211ca75e39bf1033",
+        "italic": "anonymous_pro_anonymouspro_regular_italic_8c95e7bdca7d0d3c211ca75e39bf1033"
+    },
+    "anton-anton-regular": {
+        "normal": "anton_anton_regular_normal_5d464d5aa4bfa24d68c03479ad909a0a",
+        "italic": "D:\\PKL\\SOD\\sertifikasi-online-diantara-backend\\storage\\fonts\/anton_anton_regular_italic_5d464d5aa4bfa24d68c03479ad909a0a"
+    },
+    "league_gothic-leaguegothic-regular-variablefont_wdth": {
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/league_gothic_leaguegothic_regular_variablefont_wdth_normal_0f02d4872fcc556589ea9c8c756b873d",
+        "italic": "league_gothic_leaguegothic_regular_variablefont_wdth_italic_0f02d4872fcc556589ea9c8c756b873d"
+    },
+    "poppins-poppins-regular": {
+        "normal": "poppins_poppins_regular_normal_5e882467ad8772e64689184bdb891eaa"
+    },
+    "playfair_display-playfairdisplay-regular": {
+        "normal": "playfair_display_playfairdisplay_regular_normal_20bf3645e0f91b9eda550d5f6d97a909"
+    },
+    "breathing-breathing-personal-use-only": {
+        "normal": "breathing_breathing_personal_use_only_normal_d975a6a0330486be658cfdafb291fe38"
+    },
+    "oswald": {
+        "600": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/oswald_600_4477444c47385abeb0dc6df38210dfb3",
+        "normal": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/oswald_normal_21deae8f7e71528a39ac3145d665c410",
+        "500": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/oswald_500_682833818e6acbf76bf446b2e502ab68",
+        "bold_italic": "C:\\laragon\\www\\sertifikasi-online-diantara-backend\\storage\\fonts\/oswald_bold_italic_b9b91fff3728fcd360044395a0fff30b",
+        "bold": "oswald_bold_b9b91fff3728fcd360044395a0fff30b"
+    },
+    "oswald-oswald-semibold": {
+        "600": "oswald_oswald_semibold_600_4477444c47385abeb0dc6df38210dfb3"
+    },
+    "montserrat-montserrat-semibold": {
+        "600": "montserrat_montserrat_semibold_600_da76f05f8eae6cfe610b5528caf415ec"
+    },
+    "inter-inter_18pt-semibold": {
+        "600": "inter_inter_18pt_semibold_600_9aa8a5e22fae2754d1f14feaf57e304d"
+    },
+    "poppins-poppins-semibold": {
+        "600": "poppins_poppins_semibold_600_f8f1acc4953dfb03f114a9ad8b3b0517"
+    },
+    "dm sans": {
+        "500": "dm_sans_500_c020584c5d709c089f750fe2eea78121"
+    },
+    "caitlin angelica": {
+        "normal": "caitlin_angelica_normal_20a7798d2dea33bcf683d4ca5bc6c725"
+    }
+}
