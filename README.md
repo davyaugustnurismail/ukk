@@ -6,6 +6,8 @@
 3. [Akun Default](#akun-default)
 4. [Diagram ERD](#diagram-erd)
 5. [Diagram UML](#diagram-uml)
+   - [Use Case Diagram](#use-case-diagram)
+   - [Class Diagram](#class-diagram)
 6. [Prasyarat](#prasyarat)
 7. [Instalasi dari Git](#instalasi-dari-git)
 8. [Konfigurasi Database](#konfigurasi-database)
@@ -181,6 +183,48 @@ Role     : Admin
 
 ## 📐 Diagram UML
 
+### Use Case Diagram
+
+```
+                                      ┌─────────────────────────────────────────┐
+                                      │   Sertifikasi Online Diantara System    │
+                                      └─────────────────────────────────────────┘
+                                                        │
+                    ┌───────────────────────────────────┼───────────────────────────────────┐
+                    │                                   │                                   │
+                    │                                   │                                   │
+         ┌──────────▼─────────┐           ┌────────────▼──────────┐          ┌──────────▼──────────┐
+         │      Peserta       │           │    Instruktur         │          │      Admin          │
+         │   (Participant)    │           │   (Instructor)        │          │   (Administrator)   │
+         └──────────┬─────────┘           └────────────┬──────────┘          └──────────┬──────────┘
+                    │                                   │                                 │
+                    │                                   │                                 │
+        ┌───────────┴──────────────┐      ┌────────────┴─────────────────┐    ┌─────────┴──────────────┐
+        │                          │      │                              │    │                        │
+        │                          │      │                              │    │                        │
+    ┌───▼────────────┐  ┌────────▼──┐   ┌───┴──────────┐  ┌────────────▼──┐ ┌──┴─────────┐ ┌───────┴───────┐
+    │   Registrasi   │  │   Login    │   │  Membuat     │  │ Generate     │ │ Manajemen  │ │   Manajemen   │
+    │   & Profile    │  │            │   │  Aktivitas   │  │ Sertifikat   │ │ Pengguna   │ │   Dashboard   │
+    └────────────────┘  └────────────┘   └──────────────┘  └──────────────┘ └────────────┘ └───────────────┘
+        │                    │                    │                │              │              │
+        │                    │                    │                │              │              │
+    ┌───▼────────────┐  ┌────▼─────────┐    ┌────▼──────────┐ ┌──┴─────────────┐ │              │
+    │ Lihat Data     │  │   Akses       │    │  Manajemen    │ │ Kirim Email    │ │         ┌────▼──────┐
+    │ Aktivitas      │  │ Sertifikat    │    │ Peserta Aktiv │ │ Pemberitahuan  │ │         │ Manajemen  │
+    └────────────────┘  │               │    └───────────────┘ └────────────────┘ │         │ SMTP       │
+                        └───┬───────────┘                                          │         └────────────┘
+                            │                                                      │
+                    ┌───────▼──────────┐                                      ┌────▼────────┐
+                    │ Download         │                                      │ Manajemen   │
+                    │ Sertifikat       │                                      │ Merchant    │
+                    └────────┬─────────┘                                      └─────────────┘
+                             │
+                    ┌────────▼──────────┐
+                    │ Validasi QR Code  │
+                    │ Sertifikat        │
+                    └───────────────────┘
+```
+
 ### Class Diagram (Simplified)
 
 ```
@@ -280,10 +324,13 @@ Sebelum memulai instalasi, pastikan sistem Anda memiliki:
    - Download: https://git-scm.com/download/win
    - Verify: `git --version`
 
-5. **Database** (pilih salah satu):
-   - SQLite (built-in, tidak perlu instalasi)
-   - MySQL/MariaDB ≥ 5.7
-   - PostgreSQL ≥ 12
+5. **MySQL/MariaDB** ≥ 5.7
+   - Download: https://www.mysql.com/downloads/
+   - Verify: `mysql --version`
+
+6. **PHP Imagick Extension**
+   - Download: https://mlocati.github.io/articles/php-windows-imagick.html
+   - Extension untuk manipulasi gambar dan certificate generation
 
 ### Sistem Operasi:
 - ✅ Windows 10/11
@@ -337,20 +384,17 @@ Copy-Item .env.example .env
 
 ## 🗄️ Konfigurasi Database
 
-### Step 1: Edit File .env
+### Step 1: Buat Database di MySQL
 
-Buka file `.env` dan atur konfigurasi database sesuai kebutuhan Anda:
+Buka MySQL command line atau GUI tool (phpMyAdmin) dan buat database:
 
-#### Opsi A: Menggunakan SQLite (Recommended untuk Development)
-
-```env
-DB_CONNECTION=sqlite
-# Atau biarkan path default:
-# DB_CONNECTION=sqlite
-# Tidak perlu konfigurasi host, port, username, password
+```sql
+CREATE DATABASE sertifikasi_online CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-#### Opsi B: Menggunakan MySQL
+### Step 2: Edit File .env
+
+Buka file `.env` dan atur konfigurasi database MySQL:
 
 ```env
 DB_CONNECTION=mysql
@@ -361,24 +405,9 @@ DB_USERNAME=root
 DB_PASSWORD=your_password
 ```
 
-Jika menggunakan MySQL, buat database terlebih dahulu:
+Sesuaikan `DB_USERNAME` dan `DB_PASSWORD` dengan konfigurasi MySQL Anda.
 
-```sql
-CREATE DATABASE sertifikasi_online;
-```
-
-#### Opsi C: Menggunakan PostgreSQL
-
-```env
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=5432
-DB_DATABASE=sertifikasi_online
-DB_USERNAME=postgres
-DB_PASSWORD=your_password
-```
-
-### Step 2: Konfigurasi Lainnya
+### Step 3: Konfigurasi Lainnya
 
 Di file `.env`, pastikan juga mengatur:
 
@@ -404,7 +433,7 @@ MAIL_FROM_ADDRESS=noreply@example.com
 MAIL_FROM_NAME="Sertifikasi Online Diantara"
 ```
 
-### Step 3: Generate Application Key
+### Step 4: Generate Application Key
 
 ```bash
 php artisan key:generate
@@ -463,87 +492,34 @@ mklink /D "C:\path\to\project\public\storage" "C:\path\to\project\storage\app\pu
 
 ## 🚀 Menjalankan Aplikasi
 
-### Opsi A: Menggunakan Laravel Built-in Server (Recommended untuk Development)
-
-#### Terminal 1: Jalankan Backend Server
+### Terminal 1: Jalankan Backend Server
 
 ```bash
-# Jalankan Laravel server (default port 8000)
+# Jalankan Laravel server pada port 8000 (default)
 php artisan serve
-
-# Atau dengan port custom
-php artisan serve --port=8001
 
 # Output:
 # INFO  Server running on [http://127.0.0.1:8000].
 ```
 
-#### Terminal 2: Jalankan Vite Development Server (untuk Assets)
+### Terminal 2: Jalankan Vite Development Server (untuk Assets Frontend)
 
 ```bash
-# Jalankan Vite dev server untuk hot reload CSS/JS
+# Jalankan dari folder frontend (sertifikasi-online-diantara)
+# Navigasi ke folder frontend
+cd ../sertifikasi-online-diantara
+
+# Jalankan Vite dev server pada port 3000 (default)
 npm run dev
 
 # Output:
 # VITE v7.0.0  ready in 123 ms
-# ➜  Local:   http://localhost:5173/
+# ➜  Local:   http://localhost:3000/
 ```
 
 Aplikasi sekarang dapat diakses di:
 - **Backend API**: http://localhost:8000
-- **Frontend Assets**: http://localhost:5173
-
-### Opsi B: Menggunakan Docker (Jika Available)
-
-```bash
-# Build image
-docker-compose build
-
-# Jalankan container
-docker-compose up -d
-
-# Jalankan migration di dalam container
-docker-compose exec app php artisan migrate
-
-# View logs
-docker-compose logs -f app
-```
-
-### Opsi C: Menggunakan PHP CLI Server Manual
-
-```bash
-# Jalankan server pada folder public
-php -S localhost:8000 -t public
-
-# atau dengan port lain
-php -S localhost:9000 -t public
-```
-
----
-
-## 📝 Testing API
-
-Setelah server berjalan, Anda dapat test API menggunakan:
-
-### Postman
-1. Download Postman: https://www.postman.com/downloads/
-2. Import file collection jika tersedia
-3. Set base URL ke `http://localhost:8000`
-4. Test endpoint API
-
-### cURL
-```bash
-# Contoh GET request
-curl http://localhost:8000/api/users
-
-# Contoh POST request
-curl -X POST http://localhost:8000/api/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"dev@diantara.net","password":"programmer"}'
-```
-
-### VS Code REST Client Extension
-Buat file `requests.http` dan gunakan extension REST Client
+- **Frontend**: http://localhost:3000
 
 ---
 
@@ -580,49 +556,6 @@ sertifikasi-online-diantara-backend/
 
 ---
 
-## 🐛 Troubleshooting
-
-### 1. Error: "No application encryption key has been specified"
-**Solusi**:
-```bash
-php artisan key:generate
-```
-
-### 2. Error: "SQLSTATE[HY000]: General error: 1 near "CREATE TABLE""
-**Solusi**: Pastikan direktori `database` memiliki write permission:
-```bash
-chmod 755 database/
-chmod 755 database/*.sqlite
-```
-
-### 3. Error: "The storage path is not writable"
-**Solusi**:
-```bash
-chmod -R 755 storage/
-chmod -R 755 bootstrap/cache/
-```
-
-### 4. Error: "Class not found" setelah menambah model/controller
-**Solusi**:
-```bash
-composer dump-autoload
-```
-
-### 5. Port 8000 sudah digunakan
-**Solusi**: Gunakan port lain
-```bash
-php artisan serve --port=8001
-```
-
-### 6. npm install tidak berhasil
-**Solusi**: Clear cache dan install ulang
-```bash
-npm cache clean --force
-npm install
-```
-
----
-
 ## 📚 Dokumentasi Lebih Lanjut
 
 - **Laravel Documentation**: https://laravel.com/docs
@@ -635,22 +568,11 @@ npm install
 
 ## 👥 Tim Pengembang
 
-Proyek ini dikembangkan oleh tim UKK Sertifikasi Diantara.
-
----
-
-## 📄 Lisensi
-
-Proyek ini menggunakan lisensi MIT. Silakan lihat file `LICENSE` untuk detail lebih lanjut.
-
----
-
-## 💬 Support
-
-Untuk pertanyaan atau masalah, silakan hubungi tim pengembang atau buat issue di repository.
+Proyek ini dikembangkan oleh Tim Sertifikasi Online Diantara.
 
 ---
 
 **Terakhir diupdate**: November 2025
 **Versi Laravel**: 12.0
 **Versi PHP**: 8.2+
+**Database**: MySQL 5.7+
