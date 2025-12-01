@@ -1,6 +1,7 @@
 # Pengenalan Proyek Sertifikasi Online Diantara - Backend
 
 ## 📋 Daftar Isi
+
 1. [Tujuan Web](#tujuan-web)
 2. [Fitur Utama](#fitur-utama)
 3. [Akun Default](#akun-default)
@@ -30,17 +31,20 @@ Aplikasi **Sertifikasi Online Diantara** adalah platform berbasis web yang diran
 ## ✨ Fitur Utama
 
 ### Fitur untuk Peserta:
+
 - ✅ Melihat daftar sertifikat yang diperoleh
 - ✅ Download sertifikat digital
 - ✅ Validasi/Verifikasi sertifikat menggunakan QR Code
 - ✅ Riwayat aktivitas kegiatan
 
 ### Fitur untuk Instruktur:
+
 - ✅ Melihat data kegiatan/aktivitas
 - ✅ Generate sertifikat untuk peserta
 - ✅ Manajemen notifikasi
 
 ### Fitur untuk Admin:
+
 - ✅ Manajemen pengguna (peserta, instruktur, admin)
 - ✅ Manajemen roles dan permissions
 - ✅ Manajemen merchant/organisasi
@@ -49,6 +53,7 @@ Aplikasi **Sertifikasi Online Diantara** adalah platform berbasis web yang diran
 - ✅ Export/Import data
 
 ### Fitur Teknis:
+
 - ✅ Sistem autentikasi dengan Sanctum
 - ✅ Generate QR Code untuk verifikasi sertifikat
 - ✅ Generate PDF sertifikat dengan Dompdf
@@ -64,6 +69,7 @@ Aplikasi **Sertifikasi Online Diantara** adalah platform berbasis web yang diran
 Setelah instalasi dan menjalankan seeder, akun default berikut tersedia:
 
 ### Admin Account:
+
 ```
 Email    : dev@diantara.net
 Password : programmer
@@ -71,6 +77,7 @@ Role     : Admin
 ```
 
 ### Instruktur Account:
+
 ```
 Email    : instruktur@example.com
 Password : password
@@ -79,6 +86,7 @@ Role     : Instruktur
 ```
 
 ### Peserta Account:
+
 ```
 Email    : test@example.com
 Password : password
@@ -111,36 +119,34 @@ Role     : Peserta
 
 ---
 
-## 🗂️ Relasi Tabel
-
-![Relasi Tabel](ukkrelasi.png)
-
-**Deskripsi**: Diagram relasi tabel menampilkan struktur database dengan detail lengkap tentang hubungan antar tabel, atribut, kunci primer, dan kunci asing dalam sistem Sertifikasi Online Diantara.
-
----
-
 ## 🔧 Prasyarat
 
 Sebelum memulai instalasi, pastikan sistem Anda memiliki:
 
 ### Software yang Diperlukan:
+
 1. **PHP** ≥ 8.2
+
    - Download: https://www.php.net/downloads
    - Verify: `php --version`
 
 2. **Composer** (PHP Package Manager)
+
    - Download: https://getcomposer.org/download/
    - Verify: `composer --version`
 
 3. **Node.js & npm** (untuk Vite/Frontend Assets)
+
    - Download: https://nodejs.org/
    - Verify: `node --version` dan `npm --version`
 
 4. **Git**
+
    - Download: https://git-scm.com/download/win
    - Verify: `git --version`
 
 5. **MySQL/MariaDB** ≥ 5.7
+
    - Download: https://www.mysql.com/downloads/
    - Verify: `mysql --version`
 
@@ -149,11 +155,13 @@ Sebelum memulai instalasi, pastikan sistem Anda memiliki:
    - Extension untuk manipulasi gambar dan certificate generation
 
 ### Sistem Operasi:
+
 - ✅ Windows 10/11
 - ✅ macOS 10.13+
 - ✅ Linux (Ubuntu/Debian/CentOS)
 
 ### Hardware Minimum:
+
 - RAM: 2GB
 - Storage: 500MB
 - Processor: Dual-core 2GHz
@@ -334,6 +342,7 @@ npm run dev
 ```
 
 Aplikasi sekarang dapat diakses di:
+
 - **Backend API**: http://localhost:8000
 - **Frontend**: http://localhost:3000
 
