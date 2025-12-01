@@ -6,13 +6,12 @@
 3. [Akun Default](#akun-default)
 4. [Diagram ERD](#diagram-erd)
 5. [Diagram UML](#diagram-uml)
-   - [Use Case Diagram](#use-case-diagram)
-   - [Class Diagram](#class-diagram)
-6. [Prasyarat](#prasyarat)
-7. [Instalasi dari Git](#instalasi-dari-git)
-8. [Konfigurasi Database](#konfigurasi-database)
-9. [Migrasi dan Symlink](#migrasi-dan-symlink)
-10. [Menjalankan Aplikasi](#menjalankan-aplikasi)
+6. [Relasi Tabel](#relasi-tabel)
+7. [Prasyarat](#prasyarat)
+8. [Instalasi dari Git](#instalasi-dari-git)
+9. [Konfigurasi Database](#konfigurasi-database)
+10. [Migrasi dan Symlink](#migrasi-dan-symlink)
+11. [Menjalankan Aplikasi](#menjalankan-aplikasi)
 
 ---
 
@@ -31,23 +30,19 @@ Aplikasi **Sertifikasi Online Diantara** adalah platform berbasis web yang diran
 ## ✨ Fitur Utama
 
 ### Fitur untuk Peserta:
-- ✅ Registrasi dan manajemen profil
 - ✅ Melihat daftar sertifikat yang diperoleh
 - ✅ Download sertifikat digital
 - ✅ Validasi/Verifikasi sertifikat menggunakan QR Code
 - ✅ Riwayat aktivitas kegiatan
 
 ### Fitur untuk Instruktur:
-- ✅ Manajemen data peserta
-- ✅ Membuat dan mengelola data kegiatan/aktivitas
+- ✅ Melihat data kegiatan/aktivitas
 - ✅ Generate sertifikat untuk peserta
-- ✅ Laporan kehadiran dan prestasi
 - ✅ Manajemen notifikasi
 
 ### Fitur untuk Admin:
 - ✅ Manajemen pengguna (peserta, instruktur, admin)
 - ✅ Manajemen roles dan permissions
-- ✅ Konfigurasi SMTP untuk email
 - ✅ Manajemen merchant/organisasi
 - ✅ Dashboard analytics
 - ✅ Manajemen notifikasi
@@ -83,101 +78,9 @@ Role     : Admin
 
 ### Entity Relationship Diagram
 
-```
-┌─────────────────┐
-│     USERS       │
-├─────────────────┤
-│ id (PK)         │
-│ name            │
-│ email (UNIQUE)  │
-│ password        │
-│ no_hp (UNIQUE)  │
-│ merchant_id (FK)│
-│ created_at      │
-│ updated_at      │
-└─────────────────┘
-         │
-         ├──────────────────────┬──────────────┐
-         │                      │              │
-         ▼                      ▼              ▼
-┌──────────────────┐   ┌──────────────┐  ┌──────────────┐
-│ DATA_ACTIVITY    │   │  ADMINS      │  │ INSTRUKTURS  │
-├──────────────────┤   ├──────────────┤  ├──────────────┤
-│ id (PK)          │   │ id (PK)      │  │ id (PK)      │
-│ name             │   │ name         │  │ name         │
-│ merchant_id (FK) │   │ email        │  │ email        │
-│ location         │   │ password     │  │ password     │
-│ generated        │   │ role_id (FK) │  │ no_hp        │
-│ created_at       │   │ merchant_id  │  │ details      │
-│ updated_at       │   │ created_at   │  │ signature    │
-└──────────────────┘   └──────────────┘  │ merchant_id  │
-         │                                │ created_at   │
-         │                                └──────────────┘
-         ▼
-┌──────────────────────┐
-│ DATA_ACTIVITY_USER   │
-├──────────────────────┤
-│ id (PK)              │
-│ data_activity_id (FK)│
-│ user_id (FK)         │
-│ type                 │
-│ additional_fields    │
-└──────────────────────┘
-         │
-         ▼
-┌────────────────────────┐
-│ USER_CERTIFICATES      │
-├────────────────────────┤
-│ id (PK)                │
-│ user_id (FK)           │
-│ data_activity_id (FK)  │
-│ certificate_number     │
-│ sertifikat_id (FK)     │
-│ created_at             │
-│ updated_at             │
-└────────────────────────┘
-         │
-         ├──────────────────────────┐
-         │                          │
-         ▼                          ▼
-┌──────────────────────┐  ┌───────────────────────┐
-│ CERTIFICATE_TASKS    │  │ CERTIFICATE_DOWNLOADS │
-├──────────────────────┤  ├───────────────────────┤
-│ id (PK)              │  │ id (PK)               │
-│ user_certificate_id  │  │ user_certificate_id   │
-│ status               │  │ instruktur_name       │
-│ created_at           │  │ sent_at               │
-│ updated_at           │  │ created_at            │
-└──────────────────────┘  └───────────────────────┘
+![Entity Relationship Diagram](ukkerd.png)
 
-┌──────────────────┐
-│   SERTIFIKATS    │
-├──────────────────┤
-│ id (PK)          │
-│ name             │
-│ template_id      │
-│ created_at       │
-│ updated_at       │
-└──────────────────┘
-
-┌──────────────────┐
-│    MERCHANTS     │
-├──────────────────┤
-│ id (PK)          │
-│ name             │
-│ created_at       │
-│ updated_at       │
-└──────────────────┘
-
-┌──────────────────┐
-│      ROLES       │
-├──────────────────┤
-│ id (PK)          │
-│ name             │
-│ created_at       │
-│ updated_at       │
-└──────────────────┘
-```
+**Deskripsi**: Diagram di atas menunjukkan hubungan antara semua tabel dalam sistem Sertifikasi Online Diantara. Setiap entitas memiliki atribut dan relasi yang jelas untuk mendukung fungsionalitas sistem.
 
 ---
 
@@ -185,121 +88,17 @@ Role     : Admin
 
 ### Use Case Diagram
 
-```
-                                      ┌─────────────────────────────────────────┐
-                                      │   Sertifikasi Online Diantara System    │
-                                      └─────────────────────────────────────────┘
-                                                        │
-                    ┌───────────────────────────────────┼───────────────────────────────────┐
-                    │                                   │                                   │
-                    │                                   │                                   │
-         ┌──────────▼─────────┐           ┌────────────▼──────────┐          ┌──────────▼──────────┐
-         │      Peserta       │           │    Instruktur         │          │      Admin          │
-         │   (Participant)    │           │   (Instructor)        │          │   (Administrator)   │
-         └──────────┬─────────┘           └────────────┬──────────┘          └──────────┬──────────┘
-                    │                                   │                                 │
-                    │                                   │                                 │
-        ┌───────────┴──────────────┐      ┌────────────┴─────────────────┐    ┌─────────┴──────────────┐
-        │                          │      │                              │    │                        │
-        │                          │      │                              │    │                        │
-    ┌───▼────────────┐  ┌────────▼──┐   ┌───┴──────────┐  ┌────────────▼──┐ ┌──┴─────────┐ ┌───────┴───────┐
-    │   Registrasi   │  │   Login    │   │  Membuat     │  │ Generate     │ │ Manajemen  │ │   Manajemen   │
-    │   & Profile    │  │            │   │  Aktivitas   │  │ Sertifikat   │ │ Pengguna   │ │   Dashboard   │
-    └────────────────┘  └────────────┘   └──────────────┘  └──────────────┘ └────────────┘ └───────────────┘
-        │                    │                    │                │              │              │
-        │                    │                    │                │              │              │
-    ┌───▼────────────┐  ┌────▼─────────┐    ┌────▼──────────┐ ┌──┴─────────────┐ │              │
-    │ Lihat Data     │  │   Akses       │    │  Manajemen    │ │ Kirim Email    │ │         ┌────▼──────┐
-    │ Aktivitas      │  │ Sertifikat    │    │ Peserta Aktiv │ │ Pemberitahuan  │ │         │ Manajemen  │
-    └────────────────┘  │               │    └───────────────┘ └────────────────┘ │         │ SMTP       │
-                        └───┬───────────┘                                          │         └────────────┘
-                            │                                                      │
-                    ┌───────▼──────────┐                                      ┌────▼────────┐
-                    │ Download         │                                      │ Manajemen   │
-                    │ Sertifikat       │                                      │ Merchant    │
-                    └────────┬─────────┘                                      └─────────────┘
-                             │
-                    ┌────────▼──────────┐
-                    │ Validasi QR Code  │
-                    │ Sertifikat        │
-                    └───────────────────┘
-```
+![Use Case Diagram](ukkuml.png)
 
-### Class Diagram (Simplified)
+**Deskripsi**: Diagram Use Case menunjukkan interaksi antara aktor (Peserta, Instruktur, Admin) dan use case yang tersedia dalam sistem. Setiap aktor dapat melakukan aksi-aksi tertentu sesuai dengan peran mereka.
 
-```
-┌─────────────────────────────────────┐
-│           User Model                │
-├─────────────────────────────────────┤
-│ - id: Integer                       │
-│ - name: String                      │
-│ - email: String                     │
-│ - password: String                  │
-│ - no_hp: String                     │
-│ - merchant_id: Integer              │
-├─────────────────────────────────────┤
-│ + create()                          │
-│ + update()                          │
-│ + delete()                          │
-│ + certificates()                    │
-│ + dataActivities()                  │
-└─────────────────────────────────────┘
-         △                △
-         │                │
-    implements        implements
-         │                │
-    ┌────┴────┐      ┌────┴─────┐
-    │          │      │          │
-┌───┴────────┐ │  ┌────┴──────┐ │
-│   Admin    │ │  │ Instruktur│ │
-├────────────┤ │  ├───────────┤ │
-│ - role_id  │ │  │- details  │ │
-│- merchant_id│ │  │- signature│ │
-└────────────┘ │  └───────────┘ │
-               │                │
+---
 
-┌──────────────────────────────────┐
-│      DataActivity Model          │
-├──────────────────────────────────┤
-│ - id: Integer                    │
-│ - name: String                   │
-│ - location: String               │
-│ - merchant_id: Integer           │
-│ - generated: Boolean             │
-├──────────────────────────────────┤
-│ + participants()                 │
-│ + certificates()                 │
-│ + tasks()                        │
-│ + generateCertificates()         │
-└──────────────────────────────────┘
+## 🗂️ Relasi Tabel
 
-┌────────────────────────────────┐
-│   UserCertificate Model        │
-├────────────────────────────────┤
-│ - id: Integer                  │
-│ - user_id: Integer             │
-│ - data_activity_id: Integer    │
-│ - certificate_number: String   │
-│ - sertifikat_id: Integer       │
-├────────────────────────────────┤
-│ + download()                   │
-│ + validate()                   │
-│ + task()                       │
-│ + certificateDownload()        │
-└────────────────────────────────┘
+![Relasi Tabel](ukkrelasi.png)
 
-┌─────────────────────────────────┐
-│      Merchant Model             │
-├─────────────────────────────────┤
-│ - id: Integer                   │
-│ - name: String                  │
-├─────────────────────────────────┤
-│ + users()                       │
-│ + admins()                      │
-│ + instrukturs()                 │
-│ + dataActivities()              │
-└─────────────────────────────────┘
-```
+**Deskripsi**: Diagram relasi tabel menampilkan struktur database dengan detail lengkap tentang hubungan antar tabel, atribut, kunci primer, dan kunci asing dalam sistem Sertifikasi Online Diantara.
 
 ---
 
@@ -523,49 +322,6 @@ Aplikasi sekarang dapat diakses di:
 
 ---
 
-## 📂 Struktur Folder Penting
-
-```
-sertifikasi-online-diantara-backend/
-├── app/
-│   ├── Console/         # Console commands
-│   ├── Enums/           # Enumeration classes
-│   ├── Helpers/         # Helper functions
-│   ├── Http/
-│   │   ├── Controllers/ # API Controllers
-│   │   └── Middleware/  # Middleware
-│   ├── Mail/            # Mailable classes
-│   ├── Models/          # Eloquent Models
-│   ├── Providers/       # Service Providers
-│   └── Traits/          # Reusable traits
-├── config/              # Configuration files
-├── database/
-│   ├── migrations/      # Database migrations
-│   ├── seeders/         # Database seeders
-│   └── factories/       # Model factories
-├── public/              # Public assets
-├── resources/           # Views and assets
-├── routes/              # API routes
-├── storage/             # File storage
-├── tests/               # Unit & Feature tests
-├── .env                 # Environment variables
-├── artisan              # Laravel CLI
-├── composer.json        # PHP dependencies
-└── package.json         # Node dependencies
-```
-
----
-
-## 📚 Dokumentasi Lebih Lanjut
-
-- **Laravel Documentation**: https://laravel.com/docs
-- **Laravel API Routes**: https://laravel.com/docs/routing
-- **Eloquent ORM**: https://laravel.com/docs/eloquent
-- **Database Migrations**: https://laravel.com/docs/migrations
-- **Authentication (Sanctum)**: https://laravel.com/docs/sanctum
-
----
-
 ## 👥 Tim Pengembang
 
 Proyek ini dikembangkan oleh Tim Sertifikasi Online Diantara.
@@ -575,4 +331,4 @@ Proyek ini dikembangkan oleh Tim Sertifikasi Online Diantara.
 **Terakhir diupdate**: November 2025
 **Versi Laravel**: 12.0
 **Versi PHP**: 8.2+
-**Database**: MySQL 5.7+
+**Database**: MySQL
