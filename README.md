@@ -70,6 +70,23 @@ Password : programmer
 Role     : Admin
 ```
 
+### Instruktur Account:
+```
+Email    : instruktur@example.com
+Password : password
+Nama     : John Doe
+Role     : Instruktur
+```
+
+### Peserta Account:
+```
+Email    : test@example.com
+Password : password
+Nama     : Test User
+No. HP   : 081234567890
+Role     : Peserta
+```
+
 **Catatan**: Ubah password ini setelah login pertama kali untuk keamanan.
 
 ---
